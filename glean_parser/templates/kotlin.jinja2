@@ -20,14 +20,14 @@
 @file:Suppress("PackageNaming")
 package {{ namespace }}
 
-import mozilla.components.service.glean.private.Lifetime // ktlint-disable no-unused-imports
-import mozilla.components.service.glean.private.TimeUnit // ktlint-disable no-unused-imports
-import mozilla.components.service.glean.private.NoExtraKeys // ktlint-disable no-unused-imports
+import mozilla.telemetry.glean.private.Lifetime // ktlint-disable no-unused-imports
+import mozilla.telemetry.glean.private.TimeUnit // ktlint-disable no-unused-imports
+import mozilla.telemetry.glean.private.NoExtraKeys // ktlint-disable no-unused-imports
 {% for obj_type in obj_types %}
-import mozilla.components.service.glean.private.{{ obj_type }}
+import mozilla.telemetry.glean.private.{{ obj_type }}
 {% endfor %}
 {% if has_labeled_metrics %}
-import mozilla.components.service.glean.private.LabeledMetricType
+import mozilla.telemetry.glean.private.LabeledMetricType
 {% endif %}
 
 internal object {{ category_name|Camelize }} {

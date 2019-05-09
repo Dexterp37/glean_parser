@@ -143,5 +143,5 @@ def test_duplicate(tmpdir):
     with open(tmpdir / 'Category.kt', 'r', encoding='utf-8') as fd:
         content = fd.read()
         assert content.count(
-            "import mozilla.components.service.glean.private.CounterMetricType"
+            "import mozilla.telemetry.glean.private.CounterMetricType"
         ) == 1

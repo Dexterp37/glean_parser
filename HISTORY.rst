@@ -5,6 +5,9 @@ History
 Unreleased
 ----------
 
+1.21.0 (2020-05-25)
+-------------------
+
 * `glinter` messages have been improved with more details and to be more
   actionable.
 * A maximum of 10 `extra_keys` is now enforced for `event` metric types.
